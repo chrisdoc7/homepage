@@ -14,7 +14,7 @@ body {
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
   --icon-color: #6a737d;
-  --border-color: #ff9a0045;
+  --border-color: #181820;
   --text-decoration-color: #004f91;
 }
 
@@ -22,6 +22,10 @@ body {
   margin: 0 auto;
   padding: 0 30px;
   max-width: 900px;
+}
+
+.container.dark {
+  background-color: var(--text-decoration-color);
 }
 
 .fh {
@@ -47,7 +51,11 @@ body {
 .resume__block {
   border-bottom: 3px solid var(--border-color);
   padding-bottom: 30px;
-  margin-bottom: 15px;
+  padding-top: 30px;
+}
+
+.resume__block.pt0 {
+  padding-top: 0;
 }
 
 @media screen and (max-width: 576px) {
@@ -154,11 +162,11 @@ body {
 }
 
 .intro__icon path {
-  fill: var(--text-decoration-color);
+  fill: #fff;
 }
 
 .intro_text {
-  color: var(--secondary-text-color);
+  color: #fff;
   text-align: justify;
 }
 
