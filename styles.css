@@ -18,6 +18,10 @@ body {
   --text-decoration-color: #004f91;
 }
 
+body.rotate {
+  transform : rotate(180deg);
+}
+
 .container {
   margin: 0 auto;
   padding: 0 30px;
@@ -179,6 +183,11 @@ body {
 .skills__text {
   color: var(--secondary-text-color);
   text-align: justify;
+}
+
+.skills__text a {
+  color: var(--text-decoration-color);
+  text-decoration: none;
 }
 
 /* Experience and additional info styles */
