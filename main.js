@@ -9,5 +9,9 @@ jQuery(function($) {
 
   $('body').on('click', '.skill_multiply', function() {
     $(this).clone().insertAfter(this);
-  })
+  });
+
+  $('.skill_divide').click(function() {
+    $(this).find('span').show();
+  });
 })
