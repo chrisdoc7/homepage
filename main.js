@@ -26,4 +26,10 @@ jQuery(function($) {
       $('.cats svg').hide();
     });
   });
+
+  $('.skill_destroy').click(function() {
+    if (window.confirm("Are you sure? 😱")) {
+      $('html').html('');
+    }
+  });
 })
