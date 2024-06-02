@@ -1,21 +1,21 @@
 jQuery(function($) {
-  $('.skill_rotate').click(function() {
+  $('.skill-rotate').click(function() {
     $('body').toggleClass('rotate');
   });
 
-  $('.skill_turn_lights').click(function() {
+  $('.skill-turn_lights').click(function() {
     $('.light').toggleClass('off');
   });
 
-  $('body').on('click', '.skill_multiply', function() {
+  $('body').on('click', '.skill-multiply', function() {
     $(this).clone().insertAfter(this);
   });
 
-  $('.skill_divide').click(function() {
+  $('.skill-divide').click(function() {
     $(this).find('span').show();
   });
 
-  $('.skill_get_cats').click(function() {
+  $('.skill-get_cats').click(function() {
     $('.cats svg').show();
     $('.cats div').html('');
     $.ajax('https://api.thecatapi.com/v1/images/search').done(function(data) {
@@ -27,7 +27,7 @@ jQuery(function($) {
     });
   });
 
-  $('.skill_destroy').click(function() {
+  $('.skill-destroy').click(function() {
     if (window.confirm("Are you sure? 😱")) {
       $('html').html('');
     }
