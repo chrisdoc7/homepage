@@ -149,6 +149,24 @@ body.rotate {
 
 /* Intro and skills styles */
 
+.cats {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.cats img {
+  max-height: 300px;
+  width: auto;
+}
+
+.cats svg {
+  max-height: 50px;
+}
+
+.cats svg {
+  display: none;
+}
+
 .intro {
   display: flex;
   justify-content: start;
